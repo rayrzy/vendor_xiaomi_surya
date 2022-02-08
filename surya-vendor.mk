@@ -34,13 +34,17 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/surya/proprietary/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
     vendor/xiaomi/surya/proprietary/lib/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib/fm_helium.so \
     vendor/xiaomi/surya/proprietary/lib/libFileMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libFileMux.so \
+    vendor/xiaomi/surya/proprietary/lib/libOmxCore.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libOmxCore.so \
     vendor/xiaomi/surya/proprietary/lib/libOmxMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libOmxMux.so \
+    vendor/xiaomi/surya/proprietary/lib/libOmxVdec.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libOmxVdec.so \
     vendor/xiaomi/surya/proprietary/lib/libcameraservice.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcameraservice.so \
     vendor/xiaomi/surya/proprietary/lib/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libfm-hci.so \
     vendor/xiaomi/surya/proprietary/lib/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmosal.so \
     vendor/xiaomi/surya/proprietary/lib/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmparser_lite.so \
     vendor/xiaomi/surya/proprietary/lib/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmrtpdecoder.so \
     vendor/xiaomi/surya/proprietary/lib/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmmrtpencoder.so \
+    vendor/xiaomi/surya/proprietary/lib/libmm-omxcore.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libmm-omxcore.so \
+    vendor/xiaomi/surya/proprietary/lib/libplatformconfig.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libplatformconfig.so \
     vendor/xiaomi/surya/proprietary/lib/libqdMetaData.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqdMetaData.so \
     vendor/xiaomi/surya/proprietary/lib/libqdMetaData.system.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libqdMetaData.system.so \
     vendor/xiaomi/surya/proprietary/lib/libwfdaac.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libwfdaac.so \
@@ -65,7 +69,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/surya/proprietary/lib64/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/fm_helium.so \
     vendor/xiaomi/surya/proprietary/lib64/libCameraEffectJNI.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libCameraEffectJNI.so \
     vendor/xiaomi/surya/proprietary/lib64/libFileMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libFileMux.so \
+    vendor/xiaomi/surya/proprietary/lib64/libOmxCore.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libOmxCore.so \
     vendor/xiaomi/surya/proprietary/lib64/libOmxMux.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libOmxMux.so \
+    vendor/xiaomi/surya/proprietary/lib64/libOmxVdec.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libOmxVdec.so \
     vendor/xiaomi/surya/proprietary/lib64/libarcsoft_deflicker.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libarcsoft_deflicker.so \
     vendor/xiaomi/surya/proprietary/lib64/libarcsoft_single_chart_calibration.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libarcsoft_single_chart_calibration.so \
     vendor/xiaomi/surya/proprietary/lib64/libarcsoft_wideselfie.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libarcsoft_wideselfie.so \
@@ -88,6 +94,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/surya/proprietary/lib64/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmparser_lite.so \
     vendor/xiaomi/surya/proprietary/lib64/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmrtpdecoder.so \
     vendor/xiaomi/surya/proprietary/lib64/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmmrtpencoder.so \
+    vendor/xiaomi/surya/proprietary/lib64/libmm-omxcore.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libmm-omxcore.so \
+    vendor/xiaomi/surya/proprietary/lib64/libplatformconfig.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libplatformconfig.so \
     vendor/xiaomi/surya/proprietary/lib64/libqdMetaData.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqdMetaData.so \
     vendor/xiaomi/surya/proprietary/lib64/libqdMetaData.system.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqdMetaData.system.so \
     vendor/xiaomi/surya/proprietary/lib64/libqvrcamera_client.qti.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libqvrcamera_client.qti.so \
@@ -209,6 +217,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/surya/proprietary/product/vendor_overlay/29/lib64/soundfx/libvolumelistener.so:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib64/soundfx/libvolumelistener.so \
 
 PRODUCT_PACKAGES += \
+    libplatformconfig \
     libantradio \
     WfdService \
     PowerOffAlarm \
